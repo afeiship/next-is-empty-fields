@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-barrage",
+  "description": "Webkit sass ui module for barrage.",
+  "main": [
+    "dist/webkit-sassui-barrage.css",
+    "dist/webkit-sassui-barrage.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "barrage"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-cssui-absolute-center",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

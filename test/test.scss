@@ -1,0 +1,4 @@
+@import "../dist/webkit-sassui-barrage.scss";
+.test-webkit-sassui-barrage{
+  @include webkit-sassui-barrage();
+}
