@@ -15,7 +15,13 @@ yarn add @jswork/next-is-empty-fields
 ```js
 import '@jswork/next-is-empty-fields';
 
-//DOCS here!
+const values = {
+  name: '',
+  email: '',
+  phone: '',
+};
+
+nx.isEmptyFields(values); // true
 ```
 
 ## license
