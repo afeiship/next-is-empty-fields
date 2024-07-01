@@ -1,3 +1,4 @@
+type ValuesType = Record<string, any> | any[];
 interface NxStatic {
-  isEmptyFields: (values: Record<string, any> | any[]) => boolean;
+  isEmptyFields: (values: ValuesType) => boolean;
 }
