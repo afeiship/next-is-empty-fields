@@ -75,4 +75,20 @@ describe('unit tests', () => {
     expect(result3).toBe(false);
     expect(result4).toBe(false);
   });
+
+  test.only('bussines case: nested object', () => {
+    const obj = {
+      US: {
+        college_tags: {
+          'US News Rank': null
+        },
+        program_tags: {
+          'US News Subject Rank': null
+        }
+      }
+    };
+
+    const res = nx.isEmptyFields(obj);
+    expect(res).toBeTruthy();
+  });
 });

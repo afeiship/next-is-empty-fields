@@ -12,9 +12,7 @@ nx.isEmptyFields = function (inValues, inOptions = {}) {
     const isArr = Array.isArray(value);
     const isObj = value && typeof value === 'object';
     if (isArr) return nx.isEmptyFields(value);
-    if (isObj) {
-      return Object.values(value).every(isEmpty);
-    }
+    if (isObj) return nx.isEmptyFields(value, inOptions);
     return isEmpty(value);
   });
 };
