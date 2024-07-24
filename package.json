@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-is-empty-fields",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detect is an empty form values.",
   "homepage": "https://js.work",
   "files": [
