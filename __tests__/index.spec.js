@@ -76,7 +76,7 @@ describe('unit tests', () => {
     expect(result4).toBe(false);
   });
 
-  test.only('bussines case: nested object', () => {
+  test('bussines case: nested object', () => {
     const obj = {
       US: {
         college_tags: {
@@ -90,5 +90,21 @@ describe('unit tests', () => {
 
     const res = nx.isEmptyFields(obj);
     expect(res).toBeTruthy();
+  });
+
+  test('null value should get false', ()=> {
+    const obj1 = null;
+    const obj2 = undefined;
+    const obj3 = 1;
+    const obj4 = '';
+    const obj5 = false;
+    const obj6 = 0;
+
+    expect(nx.isEmptyFields(obj1)).toBeFalsy();
+    expect(nx.isEmptyFields(obj2)).toBeFalsy();
+    expect(nx.isEmptyFields(obj3)).toBeFalsy();
+    expect(nx.isEmptyFields(obj4)).toBeFalsy();
+    expect(nx.isEmptyFields(obj5)).toBeFalsy();
+    expect(nx.isEmptyFields(obj6)).toBeFalsy();
   });
 });

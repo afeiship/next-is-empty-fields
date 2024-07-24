@@ -5,6 +5,8 @@ const defaults = {
 };
 
 nx.isEmptyFields = function (inValues, inOptions = {}) {
+  if (typeof inValues !== 'object' || !inValues) return false;
+
   const { isEmpty } = nx.mix(null, defaults, inOptions);
   if (Array.isArray(inValues)) return inValues.every(nx.isEmptyFields);
 
